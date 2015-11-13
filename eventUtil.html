@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Understanding - Add Event using addEventListener</title>
+
+
+</head>
+<body id ='body1'>
+<form>
+	<label value ='Name'>Enter Your Name</label>
+	<input type ='text' maxlength="20" id ='name'> 
+
+</form>
+
+<script type="text/javascript" src='eventUtil.js'> </script>
+<script type="text/javascript">
+
+var keyPresses =1;
+
+function keyPressAlert (){
+	console.log (keyPresses);
+ 	if (keyPresses ==1) {
+ 		alert(keyPresses + ' Key is pressed!');
+ 		keyPresses+=1;
+	} else {
+		alert(keyPresses + ' Keys are pressed!');
+		keyPresses+=1;
+	}	
+}
+EventUtil.addHandler (document.getElementById('name'), 'keypress', keyPressAlert);
+
+
+</script>
+</body>
+</html>
