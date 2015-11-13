@@ -2,7 +2,7 @@
 #### What it does?
 HTML code is minimal here. A simple input field is there. Everytime a key is pressed it gives an alert. Also, it gives the number of times the key was pressed.
 ####Why?
-This was done to crystalize the learning of adding events using JavaScript (i.e. **DOM Level Event Handlers **) instead of **_HTML Event Handlers_**.
+This was done to crystalize the learning of adding events using JavaScript (i.e. **DOM Level Event Handlers** ) instead of **_HTML Event Handlers_**.
 
 #### Points to remember
 - We have to ensure that _addEventListener_ related commands are excuted after loading of HTML. Else we will get an error because an event cannot be added to the element which is not loaded.
